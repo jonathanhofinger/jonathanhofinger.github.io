@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ePortfolio | Applied Geoinformatics</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fafafa;
+        }
+
+        /* Obere Menüleiste im Stil des Vorbilds */
+        header {
+            background-color: #5c636a; /* Elegantes Schiefergrau */
+            padding: 15px 30px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header .logo {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        header nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+
+        header nav a:hover {
+            color: white;
+        }
+
+        /* Hauptbereich: Zwei-Spalten-Layout */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+            display: flex;
+            gap: 60px;
+        }
+
+        /* Linke Spalte (Text) */
+        .content-col {
+            flex: 2;
+        }
+
+        .content-col h1 {
+            font-size: 2.5rem;
+            color: #1a252f;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Rechte Spalte (Profilbild) */
+        .sidebar-col {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-img-placeholder {
+            width: 250px;
+            height: 250px;
+            background-color: #e9ecef;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border: 4px solid white;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e0e0e0;
+            margin: 40px 0;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column-reverse;
+                gap: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Jonathan Hofinger</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#semester1">Semester 1</a>
+            <a href="#thesis">Master Thesis</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div class="content-col">
+            <h1>Welcome to my portfolio</h1>
+            
+            <p><span class="highlight">Currently</span>, I am a Master's student in Applied Geoinformatics at the Paris Lodron University of Salzburg (PLUS). This ePortfolio serves as a digital map of my academic progress and spatial analysis projects.</p>
+            
+            <p><span class="highlight">In 2026</span>, I successfully completed my Bachelor's degree in Geography, which solidified my interest in Geographic Information Systems (GIS), data science, and digital cartography.</p>
+            
+            <p><span class="highlight">Interests</span>: Spatial Analytics, Web-GIS Development, Remote Sensing, and Statistical Programming (R/Python).</p>
+            
+            <hr>
+            
+            <section id="semester1">
+                <h2>Semester 1</h2>
+                <p>Project documentation, lab reports, and learning reflections will be dynamically added here throughout the academic year.</p>
+            </section>
+
+            <section id="thesis">
+                <h2>Master's Thesis</h2>
+                <p>Research proposal, milestones, and spatial methodology development framework.</p>
+            </section>
+        </div>
+
+        <div class="sidebar-col">
+            <div class="profile-img-placeholder">
+                [ Your Photo ]
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
